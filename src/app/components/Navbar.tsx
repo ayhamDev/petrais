@@ -11,10 +11,12 @@ export default function Navbar() {
   const [open, SetOpen] = useState<boolean>(false);
   useEffect(() => {
     if (open) {
+      // @ts-ignore
       document.querySelector("html").style.overflow = "hidden";
     } else {
       // @ts-ignore
       document.querySelector("html").style.overflow = null;
+      // @ts-ignore
       document.querySelector("html").style.overflowX = "hidden";
     }
   }, [open]);
