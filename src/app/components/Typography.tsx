@@ -1,6 +1,6 @@
 interface ITypography {
   children: React.ReactNode;
-  className: string;
+  className?: string;
   type?: "h1" | "h2" | "h3" | "body1" | "body2";
 }
 export default function Typography(props: ITypography): JSX.Element {
