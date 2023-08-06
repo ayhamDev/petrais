@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Font = Rubik({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="mt-28">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body,
-html {
+html,
+main {
   min-height: 100vh;
   padding: 0;
   margin: 0;
@@ -13,7 +14,10 @@ html {
   padding: 0;
   margin: 0;
 }
-
+a {
+  width: fit-content;
+  display: block;
+}
 .animate-drawer {
   right: 0px;
   transition-timing-function: ease-in-out;
