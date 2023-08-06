@@ -19,9 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ overflowX: "hidden" }}>
-      <body style={{ overflowX: "hidden" }} className={Font.className}>
+      <body
+        style={{ overflowX: "hidden", position: "relative" }}
+        className={Font.className}
+      >
         <Navbar />
-        <main>{children}</main>
+        <main className="mt-28">{children}</main>
       </body>
     </html>
   );

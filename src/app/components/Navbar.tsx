@@ -3,14 +3,24 @@ import Wrapper from "@/components/Wrapper";
 import Logo from "../../../public/PetraLogo.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
   const path = usePathname();
   const [open, SetOpen] = useState<boolean>(false);
+  useEffect(() => {
+    if (open) {
+      document.querySelector("html").style.overflow = "hidden";
+    } else {
+      // @ts-ignore
+      document.querySelector("html").style.overflow = null;
+      document.querySelector("html").style.overflowX = "hidden";
+    }
+  }, [open]);
+
   return (
-    <nav className="py-4 w-full bg-white bg-opacity-25 backdrop-blur-md sticky top-0">
+    <nav className="py-4 w-full bg-white bg-opacity-25 backdrop-blur-md fixed top-0">
       <Wrapper>
         <div className="flex items-center justify-between">
           <div className="flex justify-center items-center gap-20">
@@ -168,7 +178,6 @@ export default function Navbar() {
         </div>
       </Wrapper>
       <div
-        onClick={() => SetOpen(false)}
         style={{
           background: "url(drawer.svg)",
           backgroundRepeat: "no-repeat",
@@ -181,6 +190,7 @@ export default function Navbar() {
         <ul className="flex flex-col mt-28 ml-32 items-center justify-center gap-8">
           <li>
             <Link
+              onClick={() => SetOpen(false)}
               href={"/"}
               className={`${
                 path == "/" ? "bg-[#fff]" : null
@@ -191,6 +201,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              onClick={() => SetOpen(false)}
               href={"/services"}
               className={`${
                 path.includes("/services") ? "bg-[#fff]" : null
@@ -201,6 +212,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              onClick={() => SetOpen(false)}
               href={"/portfolio"}
               className={`${
                 path.includes("/portfolio") ? "bg-[#fff]" : null
@@ -211,6 +223,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              onClick={() => SetOpen(false)}
               href={"/contactus"}
               className={`${
                 path.includes("/contactus") ? "bg-[#fff]" : null
@@ -221,6 +234,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              onClick={() => SetOpen(false)}
               href={"/blog"}
               className={`${
                 path.includes("/blog") ? "bg-[#fff]" : null
