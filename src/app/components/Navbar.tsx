@@ -9,7 +9,13 @@ import Link from "next/link";
 export default function Navbar() {
   const path = usePathname();
   const [open, SetOpen] = useState<boolean>(false);
+  const handleResize = () => {
+    if (window.innerWidth >= 1024 && open == true) {
+      SetOpen(false);
+    }
+  };
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
     if (open) {
       // @ts-ignore
       document.querySelector("html").style.overflow = "hidden";
@@ -19,6 +25,9 @@ export default function Navbar() {
       // @ts-ignore
       document.querySelector("html").style.overflowX = "hidden";
     }
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [open]);
 
   return (
@@ -229,7 +238,7 @@ export default function Navbar() {
           backgroundPosition: "-210px -200px",
         }}
         className={`lg:hidden absolute h-[100vh] py-8 bg-primary w-[330px] top-0 right-[-120%] transition-all duration-700 z-20 ${
-          open ? "animate-drawer" : null
+          open ? "animate-drawer block" : null
         }`}
       >
         <button

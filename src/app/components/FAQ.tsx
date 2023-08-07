@@ -1,6 +1,7 @@
 "use client";
 import Typography from "@/components/Typography";
 import { faq } from "@/data";
+import isMobile from "is-mobile";
 import { useState } from "react";
 
 export default function FAQ() {
@@ -40,7 +41,13 @@ export default function FAQ() {
             </div>
             <div
               className={`grid transition-all duration-500 ${
-                selected == index ? "faq-expand" : "faq-init"
+                selected == index
+                  ? !isMobile()
+                    ? "faq-expand"
+                    : "block"
+                  : !isMobile()
+                  ? "faq-init"
+                  : "hidden"
               }`}
             >
               <Typography

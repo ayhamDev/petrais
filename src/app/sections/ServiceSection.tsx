@@ -10,7 +10,7 @@ export default function ServiceContainer() {
           return (
             <div
               key={index}
-              className="w-[200px] h-[250px] border-2 border-primary rounded-secondary transition-all duration-300 cursor-pointer hover:bg-primary group flex flex-col select-none"
+              className="w-[200px] h-[250px] border-2 border-primary rounded-secondary transition-all duration-300 cursor-pointer hover:scale-105 hover:shadow-xl hover:bg-primary group flex flex-col select-none"
             >
               <div className="m-auto mt-8 w-fit flex-1">
                 <service.icon />

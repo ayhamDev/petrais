@@ -1,6 +1,7 @@
 const services = [
   {
     name: "Design Services",
+    description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
         width="113"
@@ -34,6 +35,7 @@ const services = [
   },
   {
     name: "Development Services",
+    description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
         width="123"
@@ -117,6 +119,7 @@ const services = [
   },
   {
     name: "I.T Services",
+    description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
         width="121"
@@ -160,6 +163,7 @@ const services = [
   },
   {
     name: "security Services",
+    description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
         width="92"
@@ -183,6 +187,7 @@ const services = [
   },
   {
     name: "Surveillance Serivces",
+    description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
         width="112"

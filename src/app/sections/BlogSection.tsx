@@ -40,10 +40,10 @@ export default function BlogSection() {
           <ButtonSecondary className="mt-6">Visit Our blog</ButtonSecondary>
         </div>
         <div className="relative flex-1 min-h-[500px] max-h-auto min-w-[300px]">
-          <div className="absolute top-0 right-0 z-10">
+          <div className="absolute top-0 right-0 z-10 sm:block hidden">
             <Image className="rounded-primary" src={demoimg} alt="demo" />
           </div>
-          <div className="bg-white rounded-primary CardShadow z-20 absolute bottom-0 left-0 max-w-[500px] flex flex-col">
+          <div className="bg-white rounded-primary CardShadow z-20 sm:absolute block bottom-0 left-0 max-w-[500px] flex flex-col">
             <div className="px-8 pt-6">
               <Typography type="body1">
                 Lorem ipsum dolor sit amet consectetur.

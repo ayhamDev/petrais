@@ -8,7 +8,7 @@ export default function Typography(props: ITypography): JSX.Element {
     case "h1":
       return (
         <h1
-          className={`text-offblack text-xl font-medium capitalize ${props.className}`}
+          className={`text-offblack md:text-xl text-xl-mobile font-medium capitalize ${props.className}`}
         >
           {props.children}
         </h1>
@@ -17,7 +17,7 @@ export default function Typography(props: ITypography): JSX.Element {
     case "h2":
       return (
         <h2
-          className={`text-offblack text-lg font-medium capitalize ${props.className}`}
+          className={`text-offblack md:text-lg text-lg-mobile font-medium capitalize ${props.className}`}
         >
           {props.children}
         </h2>
@@ -26,7 +26,7 @@ export default function Typography(props: ITypography): JSX.Element {
     case "h3":
       return (
         <h3
-          className={`text-offblack text-md font-normal capitalize ${props.className}`}
+          className={`text-offblack md:text-md text-md-mobile font-normal capitalize ${props.className}`}
         >
           {props.children}
         </h3>
@@ -35,7 +35,7 @@ export default function Typography(props: ITypography): JSX.Element {
     case "body1":
       return (
         <p
-          className={`text-offblack text-base font-normal capitalize ${props.className}`}
+          className={`text-offblack md:text-base text-base-mobile font-normal capitalize ${props.className}`}
         >
           {props.children}
         </p>
@@ -44,7 +44,7 @@ export default function Typography(props: ITypography): JSX.Element {
     case "body2":
       return (
         <p
-          className={`text-offblack text-sm font-light capitalize ${props.className}`}
+          className={`text-offblack md:text-sm text-sm-mobile font-light capitalize ${props.className}`}
         >
           {props.children}
         </p>
@@ -53,7 +53,7 @@ export default function Typography(props: ITypography): JSX.Element {
     default:
       return (
         <p
-          className={`text-offblack text-base font-normal capitalize ${props.className}`}
+          className={`text-offblack md:text-base text-base-mobile font-normal capitalize ${props.className}`}
         >
           {props.children}
         </p>
