@@ -13,7 +13,21 @@ main {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline-width: 2px;
+  outline-color: #fa2525;
+  outline-offset: 5px;
+  transition: all;
 }
+.faq-init {
+  grid-template-rows: 0fr;
+}
+.faq-expand {
+  grid-template-rows: 1fr;
+}
+.blog {
+  border-radius: 0px 2px 30px 0px;
+}
+
 a {
   width: fit-content;
   display: block;
@@ -24,4 +38,20 @@ a {
 }
 .animate-fade {
   opacity: 0.75;
+}
+.CardShadow {
+  filter: drop-shadow(
+      0px 4.150884628295898px 3.4313981533050537px rgba(0, 0, 0, 0.01)
+    )
+    drop-shadow(0px 9.975152969360352px 8.246126174926758px rgba(0, 0, 0, 0.02))
+    drop-shadow(
+      0px 18.78232765197754px 15.526723861694336px rgba(0, 0, 0, 0.02)
+    )
+    drop-shadow(
+      0px 33.50446319580078px 27.697023391723633px rgba(0, 0, 0, 0.02)
+    )
+    drop-shadow(
+      0px 62.666412353515625px 51.804237365722656px rgba(0, 0, 0, 0.03)
+    )
+    drop-shadow(0px 150px 124px rgba(0, 0, 0, 0.04));
 }

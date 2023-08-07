@@ -228,7 +228,7 @@ export default function Navbar() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "-210px -200px",
         }}
-        className={`lg:hidden absolute h-[100vh] py-8 bg-primary w-[330px] top-0 right-[-100%] transition-all duration-700 z-20 ${
+        className={`lg:hidden absolute h-[100vh] py-8 bg-primary w-[330px] top-0 right-[-120%] transition-all duration-700 z-20 ${
           open ? "animate-drawer" : null
         }`}
       >

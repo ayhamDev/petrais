@@ -31,6 +31,9 @@ module.exports = {
         offshape: "30px 2px 30px 2px",
         sm: "10px",
       },
+      dropShadow: {
+        sm: ``,
+      },
     },
   },
   plugins: [],
