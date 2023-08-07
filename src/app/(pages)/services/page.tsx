@@ -56,7 +56,7 @@ export default function page() {
                   index % 2 == 1 ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
               >
-                <img src={`/${service.name} blob.svg`} alt={service.name} />
+                <img src={`${service.name} blob.svg`} alt={service.name} />
                 <div>
                   <Typography type="h2">{service.name}</Typography>
                   <Typography type="body2">{service.description} </Typography>
