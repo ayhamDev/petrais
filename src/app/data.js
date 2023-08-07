@@ -1,6 +1,6 @@
 const services = [
   {
-    name: "design services",
+    name: "Design Services",
     description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
@@ -118,7 +118,7 @@ const services = [
     ),
   },
   {
-    name: "I.T Services",
+    name: "I.T services",
     description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
@@ -162,7 +162,7 @@ const services = [
     ),
   },
   {
-    name: "Security services",
+    name: "Security Services",
     description: `Lorem ipsum dolor sit amet consectetur. Ac netus lorem suspendisse sit lectus dolor. Volutpat in blandit nibh eget. At dignissim dignissim ut nunc pharetra pellentesque aenean. Mattis lobortis sodales consequat fermentum. Convallis et viverra morbi eget in integer. Maecenas pellentesque eget at vitae quis. Lorem pellentesque arcu justo ut diam tortor vitae magnis cras. Tincidunt sed id sed sit morbi odio lorem. Montes dui aliquet eleifend vulputate posuere neque commodo fames elementum. Nisi eget at nunc et pellentesque. In varius lacus.`,
     icon: () => (
       <svg
