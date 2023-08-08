@@ -289,4 +289,16 @@ const blogs = [
     date: 1691420861347,
   },
 ];
-export { services, faq, blogs };
+const portfolio = [
+  {
+    title: "how do we do that?",
+    description: `Dignissim vulputate viverra justo posuere. Est maecenas sagittis semper curabitur velit pellentesque. Viverra orci quis at tincidunt tincidunt malesuada eu. Turpis velit dictum dui rhoncus nulla massa habitant tellus fames. Gravida lacinia ut mattis dignissim risus tincidunt. Proin diam ac pellentesque nunc sit arcu enim dictum.
+    Aliquam integer consequat ultrices dapibus commodo velit. Urna accumsan dignissim tempor nibh nunc. Tristique et non a sagittis. Commodo suspendisse laoreet elit fringilla facilisi nunc lectus a augue. Sit aliquam massa sed imperdiet. Duis felis vel egestas interdum. Arcu sed nunc sed dictum dolor ligula. Posuere porttitor suspendisse rutrum in est. Arcu in fermentum quisque nulla ipsum consequat aliquam id. Aliquet eget at maecenas ultrices massa sed pellentesque. Tristique adipiscing at egestas posuere malesuada ac ut. Est ultricies eget curabitur sed quis.`,
+  },
+  {
+    title: "but why?",
+    description: `Dignissim vulputate viverra justo posuere. Est maecenas sagittis semper curabitur velit pellentesque. Viverra orci quis at tincidunt tincidunt malesuada eu. Turpis velit dictum dui rhoncus nulla massa habitant tellus fames. Gravida lacinia ut mattis dignissim risus tincidunt. Proin diam ac pellentesque nunc sit arcu enim dictum.
+    Aliquam integer consequat ultrices dapibus commodo velit. Urna accumsan dignissim tempor nibh nunc. Tristique et non a sagittis. Commodo suspendisse laoreet elit fringilla facilisi nunc lectus a augue. Sit aliquam massa sed imperdiet. Duis felis vel egestas interdum. Arcu sed nunc sed dictum dolor ligula. Posuere porttitor suspendisse rutrum in est. Arcu in fermentum quisque nulla ipsum consequat aliquam id. Aliquet eget at maecenas ultrices massa sed pellentesque. Tristique adipiscing at egestas posuere malesuada ac ut. Est ultricies eget curabitur sed quis.`,
+  },
+];
+export { services, faq, blogs, portfolio };

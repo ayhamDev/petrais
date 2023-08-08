@@ -18,6 +18,25 @@ main {
   outline-offset: 5px;
   transition: all;
 }
+*::selection {
+  background-color: #fa2525;
+  color: white;
+}
+img,
+a {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-window-dragging: none;
+  -webkit-user-drag: none;
+}
+button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-window-dragging: none;
+  -webkit-user-drag: none;
+}
 .faq-init {
   grid-template-rows: 0fr;
 }

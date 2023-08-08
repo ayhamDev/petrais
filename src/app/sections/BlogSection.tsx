@@ -37,7 +37,7 @@ export default function BlogSection() {
               </div>
             </div>
           ))}
-          <ButtonSecondary href="/" className="mt-6">
+          <ButtonSecondary href="/blog" className="mt-6 w-full">
             Visit Our blog
           </ButtonSecondary>
         </div>
@@ -45,7 +45,7 @@ export default function BlogSection() {
           <div className="absolute top-0 right-0 z-10 sm:block hidden">
             <Image className="rounded-primary" src={demoimg} alt="demo" />
           </div>
-          <div className="bg-white rounded-primary CardShadow z-20 sm:absolute block bottom-0 left-0 max-w-[500px] flex flex-col">
+          <div className="bg-white rounded-primary CardShadow z-20 sm:absolute bottom-0 left-0 max-w-[500px] flex flex-col">
             <div className="px-8 pt-6">
               <Typography type="body1">
                 Lorem ipsum dolor sit amet consectetur.

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#DDDDDD] select-none">
+    <footer className="w-full bg-[#DDDDDD] select-none shadow-2xl">
       <Wrapper>
         <div className="py-12 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-0 gap-12 md:items-start items-center">
           <div className="flex-1 flex flex-col h-full justify-between items-start">
