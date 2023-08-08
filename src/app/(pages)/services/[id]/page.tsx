@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import Button from "@/components/ButtonSecondary";
