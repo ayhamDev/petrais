@@ -43,12 +43,14 @@ export default function page() {
               </AnimateContainer>
             </div>
             <div className="flex flex-1 md:justify-end justify-center">
-              <img
-                width={"80%"}
-                className="min-h-[350px]"
-                src={`/${data.name} blob.svg`}
-                alt={data.name}
-              />
+              <AnimateContainer type="fade">
+                <img
+                  width={"80%"}
+                  className="min-h-[350px]"
+                  src={`/${data.name} blob.svg`}
+                  alt={data.name}
+                />
+              </AnimateContainer>
             </div>
           </div>
         </Wrapper>
