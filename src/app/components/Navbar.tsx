@@ -233,7 +233,7 @@ export default function Navbar() {
       </Wrapper>
       <div
         style={{
-          background: "url(drawer.svg)",
+          background: "url(/drawer.svg)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "-210px -200px",
         }}
