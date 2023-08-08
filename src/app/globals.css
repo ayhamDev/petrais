@@ -17,6 +17,19 @@ main {
   outline-color: #fa2525;
   outline-offset: 5px;
   transition: all;
+
+  --swiper-pagination-color: #fa2525;
+  --swiper-pagination-bullet-size: 15px;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-bullet-height: 15px;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  --swiper-pagination-bullet-vertical-gap: 24px;
+}
+.swiper-pagination-bullet {
+  border: 2px solid #fa2525;
 }
 *::selection {
   background-color: #fa2525;

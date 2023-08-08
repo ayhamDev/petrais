@@ -41,11 +41,12 @@ export default function page() {
                 non elit purus et. Erat venenatis donec gravida aliquam
                 scelerisque scelerisque magna. Mattis mollis enim.
               </Typography>
-              <div className="mt-4 flex flex-col gap-2">
+              <div className="mt-8 flex flex-col gap-2">
                 <Typography type="h3">signup for our Email Letter</Typography>
                 <div className="bg-secondary rounded-primary flex">
                   <input
                     type="email"
+                    placeholder="Email"
                     className="bg-transparent py-3 px-6 w-full outline-none placeholder-offblack placeholder-opacity-60 text-offblack"
                   />
                   <Button>Submit</Button>

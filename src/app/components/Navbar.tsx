@@ -31,7 +31,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <nav className="py-4 w-full bg-white bg-opacity-25 backdrop-blur-md fixed top-0 z-50">
+    <nav className="py-4 w-full bg-white bg-opacity-30 backdrop-blur-md fixed top-0 z-50">
       <Wrapper>
         <div className="flex items-center justify-between">
           <div className="flex justify-center items-center gap-20">
