@@ -1,6 +1,6 @@
 "use client";
 // Import Swiper React components
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperProps } from "swiper/react";
 import { Navigation, Pagination, A11y, EffectCube } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
@@ -10,12 +10,13 @@ import "swiper/css/scrollbar";
 
 // Import Swiper styles
 import "swiper/css";
-
-export default function SwiperContainer(props: { children: React.ReactNode }) {
+interface ISwiper extends SwiperProps {
+  children: React.ReactNode;
+}
+export default function SwiperContainer(props: ISwiper) {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
+      {...props}
       modules={[Pagination, A11y]}
       pagination={{
         clickable: true,
