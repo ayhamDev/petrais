@@ -66,7 +66,9 @@ export default function page() {
               </div>
               <Button
                 href={`/services/${service.link}`}
-                className={`mt-4 ${index % 2 == 0 ? "ml-auto" : "mr-auto"}`}
+                className={`mt-4 ${
+                  index % 2 == 0 ? "lg:ml-auto" : "lg:mr-auto"
+                }`}
               >
                 See More
               </Button>
