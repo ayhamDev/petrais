@@ -13,7 +13,8 @@ import Image from "next/image";
 import headerImg from "../../public/main.png";
 import WorkSection from "./sections/WorkSection";
 import ClientsSection from "./sections/ClientsSection";
-
+import SectionNoAnimation from "./components/SectionNoAnimation";
+import AnimateContainer from "./components/AnimateContainer";
 export default function page() {
   return (
     <>
@@ -27,27 +28,40 @@ export default function page() {
                 alt="blob"
               />
               <div className="flex justify-between items-center gap-32 lg:flex-row flex-col-reverse">
-                <div className="flex-1">
-                  <Typography type="h1" className="text-offblack">
-                    Welcome To
-                  </Typography>
-                  <Typography type="h1" className="text-primary">
-                    Petra Company
-                  </Typography>
-                  <Typography
-                    type="body2"
-                    className="text-offblack opacity-75 mt-4"
-                  >
-                    Lorem ipsum dolor sit amet consectetur. Sed leo nulla
-                    integer sodales egestas nisi amet tellus. Id etiam amet sit
-                    aenean
-                  </Typography>
-                  <Button href="/contactus" className="mt-8">
-                    Lets work together
-                  </Button>
+                <div className="flex-1 z-0">
+                  <AnimateContainer>
+                    <Typography type="h1" className="text-offblack">
+                      Welcome To
+                    </Typography>
+                  </AnimateContainer>
+                  <AnimateContainer delay={0.5}>
+                    <Typography type="h1" className="text-primary">
+                      Petra Company
+                    </Typography>
+                  </AnimateContainer>
+                  <AnimateContainer delay={0.75}>
+                    <Typography
+                      type="body2"
+                      className="text-offblack opacity-75 mt-4"
+                    >
+                      Lorem ipsum dolor sit amet consectetur. Sed leo nulla
+                      integer sodales egestas nisi amet tellus. Id etiam amet
+                      sit aenean
+                    </Typography>
+                  </AnimateContainer>
+                  <AnimateContainer delay={1}>
+                    <Button href="/contactus" className="mt-8">
+                      Lets work together
+                    </Button>
+                  </AnimateContainer>
                 </div>
                 <div className="flex-1">
-                  <Image src={headerImg} alt="sq" />
+                  <AnimateContainer type="fade">
+                    <Image
+                      src={headerImg}
+                      alt="man using his laptop on a chair"
+                    />
+                  </AnimateContainer>
                 </div>
               </div>
             </Wrapper>
@@ -90,6 +104,7 @@ export default function page() {
         </SwiperSlide>
       </SwiperContainer>
       <Section
+        key={1}
         className="mt-[150px]"
         title="Our Services"
         description="Lorem ipsum dolor sit amet consectetur. Viverra dignissim congue mauris lorem nulla et dolor tempus ut. Cras condimentum lacus orci tortor lacus. Ut amet eu purus ut. In curabitur et ut risus."
@@ -108,9 +123,9 @@ export default function page() {
       <Section title="Our Clients">
         <ClientsSection />
       </Section>
-      <Section title="Petra Blog">
+      <SectionNoAnimation title="Petra Blog">
         <BlogSection />
-      </Section>
+      </SectionNoAnimation>
     </>
   );
 }

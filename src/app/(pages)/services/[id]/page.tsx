@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-"use client";
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Button from "@/components/ButtonSecondary";
 import Typography from "@/components/Typography";
 import Wrapper from "@/components/Wrapper";
@@ -8,6 +8,7 @@ import Section from "@/components/Section";
 import React, { FC } from "react";
 import { services } from "@/data";
 import { redirect, useParams } from "next/navigation";
+import AnimateContainer from "@/components/AnimateContainer";
 
 export default function page() {
   const { id } = useParams();
@@ -21,28 +22,32 @@ export default function page() {
         <Wrapper className="pt-24 relative">
           <div className="flex justify-between items-center gap-32 lg:flex-row flex-col-reverse">
             <div className="flex-1">
-              <Typography type="h1" className="text-primary">
-                {data.name}
-              </Typography>
-              <Typography type="h2" className="text-offblack">
-                What we do
-              </Typography>
-              <Typography
-                type="body2"
-                className="text-offblack opacity-75 mt-4"
-              >
-                {data.description}
-              </Typography>
-              <Button href="/contactus" className="mt-8">
-                Get this service Now
-              </Button>
+              <AnimateContainer>
+                <Typography type="h1" className="text-primary">
+                  {data.name}
+                </Typography>
+                <Typography type="h2" className="text-offblack">
+                  What we do
+                </Typography>
+                <Typography
+                  type="body2"
+                  className="text-offblack opacity-75 mt-4"
+                >
+                  {data.description}
+                </Typography>
+              </AnimateContainer>
+              <AnimateContainer delay={0.25}>
+                <Button href="/contactus" className="mt-8">
+                  Get this service Now
+                </Button>
+              </AnimateContainer>
             </div>
             <div className="flex flex-1 md:justify-end justify-center">
               <img
                 width={"80%"}
                 className="min-h-[350px]"
                 src={`/${data.name} blob.svg`}
-                alt=""
+                alt={data.name}
               />
             </div>
           </div>

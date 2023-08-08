@@ -30,6 +30,7 @@ main {
 }
 .swiper-pagination-bullet {
   border: 2px solid #fa2525;
+  transition: all 0.35s;
 }
 *::selection {
   background-color: #fa2525;

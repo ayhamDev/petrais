@@ -9,6 +9,7 @@ import Section from "@/components/Section";
 import ContactUsSection from "@/sections/ContactUsSection";
 import moment from "moment";
 import { blogs } from "@/data";
+import AnimateContainer from "@/components/AnimateContainer";
 
 export default function page() {
   return (
@@ -22,26 +23,32 @@ export default function page() {
           />
           <div className="flex justify-between items-center gap-32 lg:flex-row flex-col-reverse">
             <div className="flex-1">
-              <Typography type="h1" className="text-primary">
-                Petra blog
-              </Typography>
-              <Typography type="h2" className="text-offblack">
-                Everything we do, we do with love
-              </Typography>
-              <div className="mt-8 flex flex-col gap-2">
-                <Typography type="h3">signup for our Email Letter</Typography>
-                <div className="bg-secondary rounded-primary flex">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="bg-transparent py-3 px-6 w-full outline-none placeholder-offblack placeholder-opacity-60 text-offblack"
-                  />
-                  <Button>Submit</Button>
+              <AnimateContainer>
+                <Typography type="h1" className="text-primary">
+                  Petra blog
+                </Typography>
+                <Typography type="h2" className="text-offblack">
+                  Everything we do, we do with love
+                </Typography>
+              </AnimateContainer>
+              <AnimateContainer delay={0.25}>
+                <div className="mt-8 flex flex-col gap-2">
+                  <Typography type="h3">signup for our Email Letter</Typography>
+                  <div className="bg-secondary rounded-primary flex">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="bg-transparent py-3 px-6 w-full outline-none placeholder-offblack placeholder-opacity-60 text-offblack"
+                    />
+                    <Button>Submit</Button>
+                  </div>
                 </div>
-              </div>
+              </AnimateContainer>
             </div>
             <div className="flex-1">
-              <Image src={headerImg} alt="sq" />
+              <AnimateContainer type="fade">
+                <Image src={headerImg} alt="blog" />
+              </AnimateContainer>
             </div>
           </div>
         </Wrapper>

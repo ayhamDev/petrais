@@ -110,7 +110,7 @@ export default function Navbar() {
                 <Link
                   href={"/portfolio"}
                   className={`${
-                    path.includes("/portfolio")
+                    path == "/portfolio"
                       ? "bg-primary"
                       : "hover:bg-primary hover:bg-opacity-5"
                   } rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
@@ -122,7 +122,7 @@ export default function Navbar() {
                 <Link
                   href={"/contactus"}
                   className={`${
-                    path.includes("/contactus")
+                    path == "/contactus"
                       ? "bg-primary"
                       : "hover:bg-primary hover:bg-opacity-5"
                   } rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
@@ -134,7 +134,7 @@ export default function Navbar() {
                 <Link
                   href={"/blog"}
                   className={`${
-                    path.includes("/blog")
+                    path == "/blog"
                       ? "bg-primary"
                       : "hover:bg-primary hover:bg-opacity-5"
                   } rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
@@ -294,7 +294,7 @@ export default function Navbar() {
               onClick={() => SetOpen(false)}
               href={"/portfolio"}
               className={`${
-                path.includes("/portfolio") ? "bg-[#fff]" : null
+                path == "/portfolio" ? "bg-[#fff]" : null
               } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Portfolio
@@ -305,7 +305,7 @@ export default function Navbar() {
               onClick={() => SetOpen(false)}
               href={"/contactus"}
               className={`${
-                path.includes("/contactus") ? "bg-[#fff]" : null
+                path == "/contactus" ? "bg-[#fff]" : null
               } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Contact Us
@@ -316,7 +316,7 @@ export default function Navbar() {
               onClick={() => SetOpen(false)}
               href={"/blog"}
               className={`${
-                path.includes("/blog") ? "bg-[#fff]" : null
+                path == "/blog" ? "bg-[#fff]" : null
               } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Blog

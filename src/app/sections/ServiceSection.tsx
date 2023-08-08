@@ -1,7 +1,11 @@
+"use client";
+
 import Wrapper from "@/components/Wrapper";
 import Typography from "@/components/Typography";
 import { services } from "@/data";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 
 export default function ServiceContainer() {
   return (
