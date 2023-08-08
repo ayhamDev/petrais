@@ -6,7 +6,7 @@ import ContactUsSection from "@/sections/ContactUsSection";
 import BlogSection from "@/sections/BlogSection";
 import SwiperContainer from "./components/SwiperContainer";
 import { SwiperSlide } from "swiper/react";
-import Button from "./components/Button";
+import Button from "./components/ButtonSecondary";
 import Typography from "./components/Typography";
 import Wrapper from "./components/Wrapper";
 import Image from "next/image";
