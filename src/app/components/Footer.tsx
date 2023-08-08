@@ -132,35 +132,35 @@ export default function Footer() {
             <Typography type="body1">Services</Typography>
             <ul className="flex flex-col gap-4">
               <li>
-                <Link href={"/"}>
+                <Link href={"/services/development-services"}>
                   <Typography type="body2" className="opacity-70">
                     Development services
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/services/i.t-services"}>
                   <Typography type="body2" className="opacity-70">
                     I.T Services
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/services/design-services"}>
                   <Typography type="body2" className="opacity-70">
                     Design and more
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/services/surveillance-and-cameras"}>
                   <Typography type="body2" className="opacity-70">
                     Surveillance and cameras
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/services/security-services"}>
                   <Typography type="body2" className="opacity-70">
                     Security services
                   </Typography>
@@ -179,28 +179,28 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/services"}>
                   <Typography type="body2" className="opacity-70">
                     Our Services
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/portfolio"}>
                   <Typography type="body2" className="opacity-70">
                     Portfolio
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/contactus"}>
                   <Typography type="body2" className="opacity-70">
                     Contact Us
                   </Typography>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/blog"}>
                   <Typography type="body2" className="opacity-70">
                     Blog
                   </Typography>
