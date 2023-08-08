@@ -98,7 +98,7 @@ export default function Navbar() {
                 <Link
                   href={"/services"}
                   className={`${
-                    path.includes("/services")
+                    path == "/services"
                       ? "bg-primary"
                       : "hover:bg-primary hover:bg-opacity-5"
                   } rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
@@ -273,7 +273,7 @@ export default function Navbar() {
               href={"/"}
               className={`${
                 path == "/" ? "bg-[#fff]" : null
-              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
+              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Home
             </Link>
@@ -283,8 +283,8 @@ export default function Navbar() {
               onClick={() => SetOpen(false)}
               href={"/services"}
               className={`${
-                path.includes("/services") ? "bg-[#fff]" : null
-              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
+                path == "/services" ? "bg-[#fff]" : null
+              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Our Services
             </Link>
@@ -295,7 +295,7 @@ export default function Navbar() {
               href={"/portfolio"}
               className={`${
                 path.includes("/portfolio") ? "bg-[#fff]" : null
-              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
+              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Portfolio
             </Link>
@@ -306,7 +306,7 @@ export default function Navbar() {
               href={"/contactus"}
               className={`${
                 path.includes("/contactus") ? "bg-[#fff]" : null
-              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
+              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Contact Us
             </Link>
@@ -317,7 +317,7 @@ export default function Navbar() {
               href={"/blog"}
               className={`${
                 path.includes("/blog") ? "bg-[#fff]" : null
-              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s text-offblack transition-all duration-300 `}
+              } text-white cursor-default rounded-primary px-6 py-2 bg-opacity-[0.15] font-light text-s transition-all duration-300 `}
             >
               Blog
             </Link>

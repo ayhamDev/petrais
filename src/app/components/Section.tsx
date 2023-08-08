@@ -1,15 +1,18 @@
 import Wrapper from "@/components/Wrapper";
 import Typography from "@/components/Typography";
+import { FC, HtmlHTMLAttributes, TableHTMLAttributes } from "react";
+import { HtmlProps } from "next/dist/shared/lib/html-context";
 
 interface ISection {
   children: React.ReactNode;
   title: string;
   description?: string;
+  className?: string;
 }
 
 export default function Section(props: ISection) {
   return (
-    <section className="mb-20">
+    <section className={`${props.className} mb-20`}>
       <Wrapper>
         <div className="flex items-center gap-8">
           <span className="flex-1 h-[2px] bg-primary sm:inline hidden"></span>

@@ -31,7 +31,9 @@ export default function page() {
                 Lorem ipsum dolor sit amet consectetur. Sed leo nulla integer
                 sodales egestas nisi amet tellus. Id etiam amet sit aenean
               </Typography>
-              <Button className="mt-8">Lets work together</Button>
+              <Button href="/contactus" className="mt-8">
+                Lets work together
+              </Button>
             </div>
             <div className="flex-1">
               <Image src={square} alt="sq" />
@@ -42,7 +44,7 @@ export default function page() {
       <div>
         <div className="flex flex-col gap-16 mt-[300px] mb-[150px]">
           {services.map((service, index) => (
-            <Wrapper key={index} className="relative">
+            <Wrapper key={index} className="relative flex flex-col">
               <img
                 src={`/${service.name} gray.svg`}
                 className={`absolute z-0 top-[-100px] ${
@@ -62,6 +64,12 @@ export default function page() {
                   <Typography type="body2">{service.description} </Typography>
                 </div>
               </div>
+              <Button
+                href={`/services/${service.link}`}
+                className={`mt-4 ${index % 2 == 0 ? "ml-auto" : "mr-auto"}`}
+              >
+                See More
+              </Button>
             </Wrapper>
           ))}
         </div>

@@ -37,7 +37,9 @@ export default function BlogSection() {
               </div>
             </div>
           ))}
-          <ButtonSecondary className="mt-6">Visit Our blog</ButtonSecondary>
+          <ButtonSecondary href="/" className="mt-6">
+            Visit Our blog
+          </ButtonSecondary>
         </div>
         <div className="relative flex-1 min-h-[500px] max-h-auto min-w-[300px]">
           <div className="absolute top-0 right-0 z-10 sm:block hidden">
